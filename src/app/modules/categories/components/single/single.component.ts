@@ -6,16 +6,22 @@ import {ActivatedRoute} from "@angular/router";
 @Component({
   selector: 'categories-single',
   template: `
+      <div class="wrapper">
       <div class="back">
           <a [routerLink]="['../']">< {{category?.name}}</a>
       </div>
-      <ng-container *ngFor="let el of category?.items">
-          <div class="element">
-              {{el.text}}
-          </div>
-      </ng-container>
+      </div>
+      <div class="element-list">
+          <ng-container *ngFor="let el of category?.items">
+              <div class="wrapper">
+                <div class="element-list__item">
+                    {{el.text}}
+                </div>
+              </div>
+          </ng-container>
+      </div>
   `,
-  styles: []
+  styleUrls: ['./single.component.less']
 })
 export class SingleComponent implements OnInit {
   category: ICategory;

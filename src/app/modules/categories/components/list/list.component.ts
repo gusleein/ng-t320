@@ -11,23 +11,7 @@ import {CategoriesService} from "../../shared/services/categories.service";
         </div>
     </ng-container>
   `,
-  styles: [
-    `
-      .category {
-          padding: 10px;
-          font-family: Roboto,serif;
-          font-style: normal;
-          font-weight: normal;
-          font-size: 14px;
-          line-height: 16px;
-          display: flex;
-          align-items: center;
-          text-indent: 16px;
-
-          color: #666666;
-      }
-    `
-  ]
+  styleUrls: ['./list.component.less']
 })
 export class ListComponent implements OnInit {
 
