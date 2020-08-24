@@ -14,7 +14,7 @@ import {Component} from '@angular/core';
       `
           .header {
               padding: 16px;
-              font-family: Roboto,serif;
+              font-family: Roboto, serif;
               font-style: normal;
               font-weight: normal;
               font-size: 14px;
@@ -24,11 +24,11 @@ import {Component} from '@angular/core';
               text-indent: 16px;
 
               color: #666666;
-              
+
               position: sticky;
               top: 0;
               width: 100%;
-              background: rgba(0, 0, 0, 0.2);
+              background: rgb(239, 240, 241);
           }
 
           .content-area {
