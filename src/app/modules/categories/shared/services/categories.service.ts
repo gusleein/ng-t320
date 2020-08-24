@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import DataService from "../types/data-service.interface";
+import DataService from "../../../../core/types/data-service.interface";
 import ICategory from "../types/category.interface";
 
 @Injectable({
