@@ -1,9 +1,9 @@
 import ICategory from "../types/category.interface";
 
-const data: ICategory[] = [
+const categories: ICategory[] = [
   {
     "id": 0,
-    "name": "Category 1",
+    "name": "Category 2",
     "items": [
       {
         "id": 1,
@@ -25,7 +25,7 @@ const data: ICategory[] = [
   },
   {
     "id": 5,
-    "name": "Category 2",
+    "name": "Category 1",
     "items": [
       {
         "id": 6,
@@ -54,4 +54,4 @@ const data: ICategory[] = [
     ]
   }
 ]
-export default data;
+export default categories;

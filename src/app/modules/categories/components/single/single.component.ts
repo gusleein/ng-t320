@@ -15,7 +15,12 @@ import {ActivatedRoute} from "@angular/router";
           <ng-container *ngFor="let el of category?.items">
               <div class="wrapper">
                 <div class="element-list__item">
-                    {{el.text}}
+                    <div class="element-list__item-text">
+                        {{el.text}}
+                    </div>
+                    <div class="element-list__item-delete" (click)="deleteItem(el.id)">
+                        <img src="/assets/icons/close.png" alt="">
+                    </div>
                 </div>
               </div>
           </ng-container>
@@ -43,4 +48,10 @@ export class SingleComponent implements OnInit {
     })
   }
 
+  deleteItem(id: number) {
+    this.service.delete(id).then(() => {
+      let items = this.category.items;
+      items.splice(items.indexOf(items.find((item)=> item.id == id)), 1)
+    })
+  }
 }
