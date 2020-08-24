@@ -19,6 +19,11 @@ import {ActivatedRoute} from "@angular/router";
                 </div>
               </div>
           </ng-container>
+          <div class="wrapper">
+              <div class="element-list__item element-list__item_new">
+                  +
+              </div>
+          </div>
       </div>
   `,
   styleUrls: ['./single.component.less']
