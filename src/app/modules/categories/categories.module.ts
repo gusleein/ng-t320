@@ -5,13 +5,15 @@ import { CategoriesRoutingModule } from './categories-routing.module';
 import { ListComponent } from './components/list/list.component';
 import { SingleComponent } from './components/single/single.component';
 import {CategoriesService} from "./shared/services/categories.service";
+import {FormsModule} from "@angular/forms";
 
 
 @NgModule({
   declarations: [ListComponent, SingleComponent],
   imports: [
     CommonModule,
-    CategoriesRoutingModule
+    CategoriesRoutingModule,
+    FormsModule
   ],
   providers: [
     CategoriesService
