@@ -6,20 +6,20 @@ const categories: ICategory[] = [
     "name": "Category 2",
     "items": [
       {
-        "id": 1,
-        "text": "Element 1"
-      },
-      {
         "id": 2,
         "text": "Element 2"
       },
       {
-        "id": 3,
-        "text": "Element 3"
+        "id": 1,
+        "text": "Element 1"
       },
       {
         "id": 4,
         "text": "Element 4"
+      },
+      {
+        "id": 3,
+        "text": "Element 3"
       }
     ]
   },
